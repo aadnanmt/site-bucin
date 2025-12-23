@@ -5,298 +5,244 @@
 
 <!doctype html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Adnan dengan kebucinannya.</title>
 
-        <!-- stylesheet path -->
-        <link rel="stylesheet" href="css/universe.css" />
-        <link rel="stylesheet" href="css/formobile.css" />
-        <link rel="stylesheet" href="css/lily.css" />
-        <link rel="stylesheet" href="css/adnan.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adnan dengan kebucinannya.</title>
 
-        <!-- google fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;600;900&display=swap"
-            rel="stylesheet"
-        />
+    <!-- stylesheet path -->
+    <link rel="stylesheet" href="css/universe.css" />
+    <link rel="stylesheet" href="css/formobile.css" />
+    <link rel="stylesheet" href="css/lily.css" />
+    <link rel="stylesheet" href="css/adnan.css" />
 
-        <!-- font awesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-    </head>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;600;900&display=swap"
+        rel="stylesheet" />
 
-    <body>
-        <!-- preloader -->
-        <div id="preloader">
-            <div class="loader-content">
-                <div class="heart-container">
-                    <i class="fa-solid fa-heart glitch-heart"></i>
-                </div>
-                <h2 class="protocol-love">
-                    INITIALIZING <span>LOVE_PROTOCOL</span>
-                </h2>
-                <div class="loading-bar-container">
-                    <div class="loading-bar-fill"></div>
-                </div>
-                <p class="connect-text">Connecting Love Adnan to Lily...</p>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="heart-container">
+                <i class="fa-solid fa-heart glitch-heart"></i>
             </div>
+            <h2 class="protocol-love">
+                INITIALIZING <span>LOVE_PROTOCOL</span>
+            </h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar-fill"></div>
+            </div>
+            <p class="connect-text">Connecting Love Adnan to Lily...</p>
         </div>
+    </div>
 
-        <!-- dynamic island | container -->
-        <div class="dynamic-island-container">
-            <!-- dynamic island -->
-            <div class="dynamic-island">
-                <!-- wavebar -->
-                <div class="di-wave idle-wave">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+    <!-- dynamic island | container -->
+    <div class="dynamic-island-container">
+        <!-- dynamic island -->
+        <div class="dynamic-island">
+            <!-- wavebar -->
+            <div class="di-wave idle-wave">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <!-- when expand {hover} -->
+            <div class="di-expand">
+                <!-- dynamic island profile | Adnan -->
+                <div class="di-profil">
+                    <img src="https://avatars.githubusercontent.com/u/199176689?v=4" class="di-avatar"
+                        style="border-color: var(--accent-left)" />
                 </div>
 
-                <!-- when expand {hover} -->
-                <div class="di-expand">
-                    <!-- dynamic island profile | Adnan -->
-                    <div class="di-profil">
-                        <img
-                            src="https://avatars.githubusercontent.com/u/199176689?v=4"
-                            class="di-avatar"
-                            style="border-color: var(--accent-left)"
-                        />
-                    </div>
-
-                    <!-- button play music Sempurna by Andra and The Backbone -->
-                    <div
-                        style="
+                <!-- button play music Sempurna by Andra and The Backbone -->
+                <div style="
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                        "
-                    >
-                        <button id="tombolPlay">
-                            <i id="iconPlay" class="fa-solid fa-play"></i>
-                        </button>
-                    </div>
-
-                    <!-- dynamic island profile | Lily -->
-                    <div class="di-profil">
-                        <img
-                            src="https://pbs.twimg.com/media/GwJNjHmW8AAuGZI?format=jpg&name=medium"
-                            class="di-avatar"
-                            style="border-color: var(--accent-right)"
-                        />
-                    </div>
+                        ">
+                    <button id="tombolPlay">
+                        <i id="iconPlay" class="fa-solid fa-play"></i>
+                    </button>
                 </div>
 
-                <!-- audio {backsound for website} -->
-                <audio
-                    id="laguku"
-                    src="Auudio/Andra And The Backbone - Sempurna.mp3"
-                ></audio>
+                <!-- dynamic island profile | Lily -->
+                <div class="di-profil">
+                    <img src="https://pbs.twimg.com/media/GwJNjHmW8AAuGZI?format=jpg&name=medium" class="di-avatar"
+                        style="border-color: var(--accent-right)" />
+                </div>
+            </div>
+
+            <!-- audio {backsound for website} -->
+            <audio id="laguku" src="Auudio/Andra And The Backbone - Sempurna.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- split screen left | Adnan -->
+    <div class="split left-side" id="adnan">
+        <!-- decoration | Adnan -->
+        <div class="bg-decor-container">
+            <i class="fa-solid fa-ghost bg-icon anim-glitch pos-1"></i>
+            <i class="fa-solid fa-bug bg-icon anim-glitch pos-2"></i>
+            <i class="fa-solid fa-robot bg-icon anim-glitch pos-3"></i>
+            <i class="fa-solid fa-terminal bg-icon anim-glitch pos-4"></i>
+            <i class="fa-solid fa-skull-crossbones bg-icon anim-glitch pos-5"></i>
+        </div>
+
+        <!-- foto Adnan anak yang sangat amat rendah hati {humble}-->
+        <div class="profile-reveal-box">
+            <img src="https://avatars.githubusercontent.com/u/199176689?v=4" alt="Lily" class="lily-img" />
+
+            <div class="hidden-bucin-msg msg-lily">MAU NGAPAIN, KAMU!</div>
+        </div>
+
+        <!-- judul | namaku -->
+        <div>
+            <h1 class="adnan-title">ADNAN</h1>
+            <p class="adnan-subtitle">>_ A Programmer & Tech Enthusiast</p>
+        </div>
+
+        <!-- sosial media icon | Adnan -->
+        <div class="socials">
+            <a href="https://www.github.com/aadnanmt" target="_blank" aria-label=""><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adnan-slamet-wibowo-73906035b" target="_blank" aria-label="GitHub"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/aadnanmt" target="_blank" aria-label="GitHub"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.aadnanmt.web.id" target="_blank" aria-label=""><i class="fa fa-link"></i></a>
+        </div>
+
+        <!-- horizontal -->
+        <hr class="divider divider-adnan" />
+
+        <!-- kata-kata dari Adnan -->
+        <div class="quote-box-left">
+            "Menurutku, Dunia ini cuman sekumpulan kode dan pola. Tapi entah
+            kenapa, logikaku selalu
+            <span><i>error</i></span> saat mencoba memahaminyaa"
+        </div>
+
+        <!-- horizontal -->
+        <hr class="divider divider-adnan" />
+
+        <div class="stats-container anim-up d-4">
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>LOGIC</span><span>94%</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill adnan-fill" style="--w: 94%"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>BOBO-NYA {TIDUR}</span><span>38%</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill adnan-fill" style="--w: 38%"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>BUCIN</span><span>34%</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill adnan-fill" style="--w: 34%"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>ABSURD</span><span>49%</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill adnan-fill" style="--w: 49%"></div>
+                </div>
             </div>
         </div>
 
-        <!-- split screen left | Adnan -->
-        <div class="split left-side" id="adnan">
-            <!-- decoration | Adnan -->
-            <div class="bg-decor-container">
-                <i class="fa-solid fa-ghost bg-icon anim-glitch pos-1"></i>
-                <i class="fa-solid fa-bug bg-icon anim-glitch pos-2"></i>
-                <i class="fa-solid fa-robot bg-icon anim-glitch pos-3"></i>
-                <i class="fa-solid fa-terminal bg-icon anim-glitch pos-4"></i>
-                <i
-                    class="fa-solid fa-skull-crossbones bg-icon anim-glitch pos-5"
-                ></i>
+        <!-- horizontal -->
+        <hr class="divider divider-adnan" />
+
+        <!-- note| Adnan -->
+        <div class="system-log">
+            <div class="log-header">
+                <span>| // SYSTEM_LOG: DETECTED</span>
+                <span class="log-blink">&#9888;&#65039;</span>
             </div>
+            <p>
+                "Aelahh, fokusku jadi keganggu. Gegara ada anomali di radius
+                137 mil &#128557;&#128557;&#128557;"<br /><br />
+                "Btw, makasih telah hadir didunia ini {Lily}. Karena kamu
+                jugalah aku semangat untuk mewujudkan keinginanku dimasa
+                mendatang."
+            </p>
+            <br />
+        </div>
 
-            <!-- foto Adnan anak yang sangat amat rendah hati {humble}-->
-            <div class="profile-reveal-box">
-                <img
-                    src="https://avatars.githubusercontent.com/u/199176689?v=4"
-                    alt="Lily"
-                    class="lily-img"
-                />
+        <!-- horizontal -->
+        <hr class="divider divider-adnan" />
 
-                <div class="hidden-bucin-msg msg-lily">MAU NGAPAIN, KAMU!</div>
-            </div>
-
-            <!-- judul | namaku -->
-            <div>
-                <h1 class="adnan-title">ADNAN</h1>
-                <p class="adnan-subtitle">>_ A Programmer & Tech Enthusiast</p>
-            </div>
-
-            <!-- sosial media icon | Adnan -->
-            <div class="socials">
-                <a
-                    href="https://www.github.com/aadnanmt"
-                    target="_blank"
-                    aria-label=""
-                    ><i class="fab fa-github"></i
-                ></a>
-                <a
-                    href="https://www.linkedin.com/in/adnan-slamet-wibowo-73906035b"
-                    target="_blank"
-                    aria-label="GitHub"
-                    ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a
-                    href="https://www.instagram.com/aadnanmt"
-                    target="_blank"
-                    aria-label="GitHub"
-                    ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a
-                    href="https://www.aadnanmt.web.id"
-                    target="_blank"
-                    aria-label=""
-                    ><i class="fa fa-link"></i
-                ></a>
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-adnan" />
-
-            <!-- kata-kata dari Adnan -->
-            <div class="quote-box-left">
-                "Menurutku, Dunia ini cuman sekumpulan kode dan pola. Tapi entah
-                kenapa, logikaku selalu
-                <span><i>error</i></span> saat mencoba memahaminyaa"
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-adnan" />
-
-            <div class="stats-container anim-up d-4">
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>LOGIC</span><span>94%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill adnan-fill"
-                            style="--w: 94%"
-                        ></div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>BOBO-NYA {TIDUR}</span><span>38%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill adnan-fill"
-                            style="--w: 38%"
-                        ></div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>BUCIN</span><span>34%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill adnan-fill"
-                            style="--w: 34%"
-                        ></div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>ABSURD</span><span>49%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill adnan-fill"
-                            style="--w: 49%"
-                        ></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-adnan" />
-
-            <!-- note| Adnan -->
-            <div class="system-log">
-                <div class="log-header">
-                    <span>| // SYSTEM_LOG: DETECTED</span>
-                    <span class="log-blink">&#9888;&#65039;</span>
-                </div>
-                <p>
-                    "Aelahh, fokusku jadi keganggu. Gegara ada anomali di radius
-                    137 mil &#128557;&#128557;&#128557;"<br /><br />
-                    "Btw, makasih telah hadir didunia ini {Lily}. Karena kamu
-                    jugalah aku semangat untuk mewujudkan keinginanku dimasa
-                    mendatang."
-                </p>
-                <br />
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-adnan" />
-
-            <!-- terminal player | inspired by kew -->
-            <div class="terminal-player">
-                <div class="tp-header">
-                    <div class="dot" style="background: #ff5f56"></div>
-                    <div class="dot" style="background: #ffbd2e"></div>
-                    <div class="dot" style="background: #27c93f"></div>
-
-                    <!-- user -->
-                    <span style="margin-left: auto"
-                        >root@adnan:~$ kew ~/my-fav_music_guewhj</span
-                    >
-                </div>
-
-                <!-- information music fav Adnan-->
-                <div class="tp-song">[PLAYING] 00:45 / 03:19</div>
-                <div class="tp-info">
-                    File: Fractured.mp3 <br />
-                    Artist: Navjaxx <br />
-                    Albumm: My Sythwave Guewhj
-                </div>
-
-                <!-- visualize and wave-bar -->
-                <div class="visualizer">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+        <!-- terminal player | inspired by kew -->
+        <div class="terminal-player">
+            <div class="tp-header">
+                <div class="dot" style="background: #ff5f56"></div>
+                <div class="dot" style="background: #ffbd2e"></div>
+                <div class="dot" style="background: #27c93f"></div>
 
                 <!-- user -->
-                <div
-                    style="
+                <span style="margin-left: auto">root@adnan:~$ kew ~/my-fav_music_guewhj</span>
+            </div>
+
+            <!-- information music fav Adnan-->
+            <div class="tp-song">[PLAYING] 00:45 / 03:19</div>
+            <div class="tp-info">
+                File: Fractured.mp3 <br />
+                Artist: Navjaxx <br />
+                Albumm: My Sythwave Guewhj
+            </div>
+
+            <!-- visualize and wave-bar -->
+            <div class="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <!-- user -->
+            <div style="
                         margin-top: 10px;
                         color: var(--accent-left);
                         font-size: 0.8rem;
-                    "
-                >
-                    root@adnan:~$
-                    <span style="animation: blink 1s infinite">|</span>
-                </div>
+                    ">
+                root@adnan:~$
+                <span style="animation: blink 1s infinite">|</span>
             </div>
+        </div>
 
-            <!-- horizontal -->
-            <hr class="divider divider-adnan" />
+        <!-- horizontal -->
+        <hr class="divider divider-adnan" />
 
-            <!-- Decription Adnan | fastfetch -->
-            <div class="fastfetch">
-                <!-- ascii art arch -->
-                <div class="ascii-logo">
-                    <pre>
+        <!-- Decription Adnan | fastfetch -->
+        <div class="fastfetch">
+            <!-- ascii art arch -->
+            <div class="ascii-logo">
+                <pre>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -310,189 +256,148 @@
 ⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀
 ⠀⢀⣾⣿⣿⠿⠟⠛⠋⠉⠉⠀⠀⠀⠀⠀⠀⠉⠉⠙⠛⠻⠿⣿⣿⣷⡀⠀
 ⣠⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⣄
-</pre
-                    >
-                </div>
-
-                <!-- specification on fastfetch -->
-                <div class="sys-specs">
-                    <div><span class="key">User</span> : Adnan Slamet W.</div>
-                    <div><span class="key">OS</span> : Arch Linux x86_64</div>
-                    <div><span class="key">Shell</span>: zsh 5.9</div>
-                    <div><span class="key">Terminal</span>: Clily 1.9.10.7</div>
-                    <div><span class="key">Uptime</span>: 17 y.o</div>
-                    <div>
-                        <span class="key">Memory</span>: 21.86 GiB / 31.25 GiB
-                        (<span>70%</span>)
-                    </div>
-                    <div>
-                        <span class="key">Focus</span>: Cybersecurity, AI, Dev.
-                    </div>
-                    <div>
-                        <span class="key">Hobby</span>: Singing, Coding, Rice,
-                        Debugging, Cooking.
-                    </div>
-                </div>
+</pre>
             </div>
 
-            <!-- runtime love Adnan -->
-            <div class="counter-box-adnan anim-up d-6">
-                <p>LOVE_RUNTIME: RUNNING</p>
-                <h2 id="uptime-adnan">CALCULATING...</h2>
+            <!-- specification on fastfetch -->
+            <div class="sys-specs">
+                <div><span class="key">User</span> : Adnan Slamet W.</div>
+                <div><span class="key">OS</span> : Arch Linux x86_64</div>
+                <div><span class="key">Shell</span>: zsh 5.9</div>
+                <div><span class="key">Terminal</span>: Clily 1.9.10.7</div>
+                <div><span class="key">Uptime</span>: 17 y.o</div>
+                <div>
+                    <span class="key">Memory</span>: 21.86 GiB / 31.25 GiB
+                    (<span>70%</span>)
+                </div>
+                <div>
+                    <span class="key">Focus</span>: Cybersecurity, AI, Dev.
+                </div>
+                <div>
+                    <span class="key">Hobby</span>: Singing, Coding, Rice,
+                    Debugging, Cooking.
+                </div>
             </div>
         </div>
 
-        <!-- free to change -->
-        <!-- connetor love | Adnan - Lily -->
-        <div
-            class="connect-love"
-            onclick="
+        <!-- runtime love Adnan -->
+        <div class="counter-box-adnan anim-up d-6">
+            <p>LOVE_RUNTIME: RUNNING</p>
+            <h2 id="uptime-adnan">CALCULATING...</h2>
+        </div>
+    </div>
+
+    <!-- free to change -->
+    <!-- connetor love | Adnan - Lily -->
+    <div class="connect-love" onclick="
                 alert(
                     'Yeyyyy, Terkoneksi. Btw Programmer juga manusia, butuh ngeluapin perasaaanya. Heheee&#x1F602;&#x1F62D;&#x1F62D;',
                 )
-            "
-        >
-            <i class="fa-solid fa-heart-pulse"></i>
+            ">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </div>
+
+    <!-- split screen lily -->
+    <div class="split right-side" id="lily">
+        <!-- decoration for Lily screen -->
+        <div class="bg-decor-container">
+            <i class="fa-solid fa-cat bg-icon anim-cute pos-1"></i>
+            <i class="fa-solid fa-heart bg-icon anim-cute pos-2" style="color: pink !important"></i>
+            <i class="fa-solid fa-star bg-icon anim-cute pos-3"></i>
+            <i class="fa-solid fa-gamepad bg-icon anim-cute pos-4"></i>
+            <i class="fa-solid fa-music bg-icon anim-cute pos-5"></i>
         </div>
 
-        <!-- split screen lily -->
-        <div class="split right-side" id="lily">
-            <!-- decoration for Lily screen -->
-            <div class="bg-decor-container">
-                <i class="fa-solid fa-cat bg-icon anim-cute pos-1"></i>
-                <i
-                    class="fa-solid fa-heart bg-icon anim-cute pos-2"
-                    style="color: pink !important"
-                ></i>
-                <i class="fa-solid fa-star bg-icon anim-cute pos-3"></i>
-                <i class="fa-solid fa-gamepad bg-icon anim-cute pos-4"></i>
-                <i class="fa-solid fa-music bg-icon anim-cute pos-5"></i>
+        <!-- picture Lily -->
+        <div class="profile-reveal-box">
+            <img src="https://pbs.twimg.com/media/GwJNjHmW8AAuGZI?format=jpg&name=medium" alt="Lily" class="lily-img" />
+
+            <!-- hidden Message for Picture Lily -->
+            <div class="hidden-bucin-msg msg-lily">
+                MINGGIR KALIAN PARA KARBIT, INI MILIK ADNAN! KAMU GA BOLEH
+                SENTUH DIA!<i class="fa-solid fa-ban"></i>
             </div>
+        </div>
 
-            <!-- picture Lily -->
-            <div class="profile-reveal-box">
-                <img
-                    src="https://pbs.twimg.com/media/GwJNjHmW8AAuGZI?format=jpg&name=medium"
-                    alt="Lily"
-                    class="lily-img"
-                />
+        <!-- Lily | about -->
+        <div>
+            <h1 class="lily-title">LILY</h1>
+            <p class="lily-subtitle">
+                <i class="fa-regular fa-heart"></i> MyLofly & Support System
+            </p>
+        </div>
 
-                <!-- hidden Message for Picture Lily -->
-                <div class="hidden-bucin-msg msg-lily">
-                    MINGGIR KALIAN PARA KARBIT, INI MILIK ADNAN! KAMU GA BOLEH
-                    SENTUH DIA!<i class="fa-solid fa-ban"></i>
+        <!-- social media link -->
+        <div class="socials">
+            <a href="https://www.instagram.com/jkt48.lily_" target="_blank" aria-label=""><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/jkt48.lily" target="_blank" aria-label=""><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/Lily_JKT48" target="_blank" aria-label=""><i class="fab fa-twitter"></i></a>
+            <a href="https://akb48.fandom.com/wiki/Hillary_Abigail" target="_blank" aria-label=""><i
+                    class="fa fa-link"></i></a>
+        </div>
+
+        <!-- horizontal -->
+        <hr class="divider divider-lily" />
+
+        <!-- quotes and typing -->
+        <div class="quote-box-right">
+            <p>
+                Hii, terimakasih sudah berjuang untuk hari inii!! Semangatt
+                terus yaa myloflyy 😔💗, goodnight, jangan begadang terus
+                yaaa!
+            </p>
+        </div>
+
+        <!-- horizontal -->
+        <hr class="divider divider-lily anim-up d-4" />
+
+        <!-- statistic Lily | in my view -->
+        <div class="stats-container anim-up d-4">
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>BEAUTY</span><span>100%</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill lily-fill" style="--w: 100%"></div>
                 </div>
             </div>
-
-            <!-- Lily | about -->
-            <div>
-                <h1 class="lily-title">LILY</h1>
-                <p class="lily-subtitle">
-                    <i class="fa-regular fa-heart"></i> MyLofly & Support System
-                </p>
-            </div>
-
-            <!-- social media link -->
-            <div class="socials">
-                <a
-                    href="https://www.instagram.com/jkt48.lily_"
-                    target="_blank"
-                    aria-label=""
-                    ><i class="fab fa-instagram"></i
-                ></a>
-                <a
-                    href="https://www.tiktok.com/jkt48.lily"
-                    target="_blank"
-                    aria-label=""
-                    ><i class="fab fa-tiktok"></i
-                ></a>
-                <a href="https://x.com/Lily_JKT48" target="_blank" aria-label=""
-                    ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                    href="https://akb48.fandom.com/wiki/Hillary_Abigail"
-                    target="_blank"
-                    aria-label=""
-                    ><i class="fa fa-link"></i
-                ></a>
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-lily" />
-
-            <!-- quotes and typing -->
-            <div class="quote-box-right">
-                <p>
-                    Hii, terimakasih sudah berjuang untuk hari inii!! Semangatt
-                    terus yaa myloflyy 😔💗, goodnight, jangan begadang terus
-                    yaaa!
-                </p>
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-lily anim-up d-4" />
-
-            <!-- statistic Lily | in my view -->
-            <div class="stats-container anim-up d-4">
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>BEAUTY</span><span>100%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill lily-fill"
-                            style="--w: 100%"
-                        ></div>
-                    </div>
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>CUTENESS</span><span>100%</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>CUTENESS</span><span>100%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill lily-fill"
-                            style="--w: 100%"
-                        ></div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>MOOD</span><span>100% {Random}</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill lily-fill"
-                            style="--w: 100%"
-                        ></div>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">
-                        <span>ABSURD</span><span>76%</span>
-                    </div>
-                    <div class="stat-bar-bg">
-                        <div
-                            class="stat-bar-fill lily-fill"
-                            style="--w: 76%"
-                        ></div>
-                    </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill lily-fill" style="--w: 100%"></div>
                 </div>
             </div>
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>MOOD</span><span>100% {Random}</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill lily-fill" style="--w: 100%"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">
+                    <span>ABSURD</span><span>76%</span>
+                </div>
+                <div class="stat-bar-bg">
+                    <div class="stat-bar-fill lily-fill" style="--w: 76%"></div>
+                </div>
+            </div>
+        </div>
 
-            <!-- horizontal -->
-            <hr class="divider divider-lily anim-up d-4" />
+        <!-- horizontal -->
+        <hr class="divider divider-lily anim-up d-4" />
 
-            <div
-                style="
+        <div style="
                     width: 100%;
                     max-width: 350px;
                     text-align: right;
                     margin-bottom: 10px;
-                "
-            >
-                <span
-                    style="
+                ">
+            <span style="
                         background: var(--accent-right);
                         color: #000;
                         letter-spacing: 1.6px;
@@ -500,142 +405,122 @@
                         font-size: 0.9rem;
                         font-weight: bold;
                         text-transform: uppercase;
-                    "
-                    >Girl Cute View</span
-                >
+                    ">Girl Cute View</span>
+        </div>
+
+        <!-- note | Lily -->
+        <div class="lily-note">
+            Hello lof! How’s todayy? i hope ur okayy. please take a good
+            care of yourself and don't push yourself too hard.<br /><br />
+            Take a break for a while, you're already doin a great job so
+            far. Keep going and don’t ya give up okay loaf?..&#129293;"
+        </div>
+
+        <!-- horizontal -->
+        <hr class="divider divider-lily anim-up d-4" />
+
+        <!-- spotify style -->
+        <div class="spotify-card">
+            <div class="spotify-header">
+                <div class="album-art">
+                    <img src="https://pbs.twimg.com/media/G7puPXxaQAAj0jM?format=jpg&name=medium" alt="Album Cover" />
+                </div>
+                <div class="track-info">
+                    <span class="track-title">Sempurna &#129293;</span>
+                    <span class="track-artist">to Lily</span>
+                </div>
+                <i class="fa-brands fa-spotify spotify-logo"></i>
             </div>
 
-            <!-- note | Lily -->
-            <div class="lily-note">
-                Hello lof! How’s todayy? i hope ur okayy. please take a good
-                care of yourself and don't push yourself too hard.<br /><br />
-                Take a break for a while, you're already doin a great job so
-                far. Keep going and don’t ya give up okay loaf?..&#129293;"
-            </div>
-
-            <!-- horizontal -->
-            <hr class="divider divider-lily anim-up d-4" />
-
-            <!-- spotify style -->
-            <div class="spotify-card">
-                <div class="spotify-header">
-                    <div class="album-art">
-                        <img
-                            src="https://pbs.twimg.com/media/G7puPXxaQAAj0jM?format=jpg&name=medium"
-                            alt="Album Cover"
-                        />
-                    </div>
-                    <div class="track-info">
-                        <span class="track-title">Sempurna &#129293;</span>
-                        <span class="track-artist">to Lily</span>
-                    </div>
-                    <i class="fa-brands fa-spotify spotify-logo"></i>
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
                 </div>
-
-                <div class="progress-area">
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                    <div class="time-stamps">
-                        <span>0:19</span>
-                        <span>10:07</span>
-                    </div>
-                </div>
-
-                <div class="spotify-controls">
-                    <i class="fa-solid fa-backward-step ctrl-btn"></i>
-                    <div class="play-btn">
-                        <i
-                            class="fa-solid fa-play"
-                            style="margin-left: 3px"
-                        ></i>
-                    </div>
-                    <i class="fa-solid fa-forward-step ctrl-btn"></i>
+                <div class="time-stamps">
+                    <span>0:19</span>
+                    <span>10:07</span>
                 </div>
             </div>
 
-            <!-- horizontal -->
-            <hr class="divider divider-lily anim-up d-4" />
-
-            <!-- Description | Lily -->
-            <div class="desc-text">
-                <h2 class="desc-title">MyLofly</h2>
-                <p class="desc-p">
-                    Papipapipum! Aku akan mengejutkanmu dengan kehebatanku, halo
-                    aku Lily!
-                </p>
-                <p class="desc-p highlight">- Lily</p>
-            </div>
-
-            <!-- status -->
-            <div class="counter-box-lily">
-                <p><i class="fa-solid fa-infinity"></i> Together For</p>
-                <h2 id="">Undefined...</h2>
+            <div class="spotify-controls">
+                <i class="fa-solid fa-backward-step ctrl-btn"></i>
+                <div class="play-btn">
+                    <i class="fa-solid fa-play" style="margin-left: 3px"></i>
+                </div>
+                <i class="fa-solid fa-forward-step ctrl-btn"></i>
             </div>
         </div>
 
-        <!-- only for mobile | navbar bottom -->
-        <div class="mobile-nav">
-            <!-- adnan monav -->
-            <a
-                href="adnan"
-                class="nav-btn active-adnan"
-                onclick="
+        <!-- horizontal -->
+        <hr class="divider divider-lily anim-up d-4" />
+
+        <!-- Description | Lily -->
+        <div class="desc-text">
+            <h2 class="desc-title">MyLofly</h2>
+            <p class="desc-p">
+                Papipapipum! Aku akan mengejutkanmu dengan kehebatanku, halo
+                aku Lily!
+            </p>
+            <p class="desc-p highlight">- Lily</p>
+        </div>
+
+        <!-- status -->
+        <div class="counter-box-lily">
+            <p><i class="fa-solid fa-infinity"></i> Together For</p>
+            <h2 id="">Undefined...</h2>
+        </div>
+    </div>
+
+    <!-- only for mobile | navbar bottom -->
+    <div class="mobile-nav">
+        <!-- adnan monav -->
+        <a href="adnan" class="nav-btn active-adnan" onclick="
                     document
                         .getElementById('adnan')
                         .scrollIntoView({ behavior: 'smooth' });
                     return false;
-                "
-                ><i class="fa-solid fa-terminal"></i><span>Me Auww</span></a
-            >
+                "><i class="fa-solid fa-terminal"></i><span>Me Auww</span></a>
 
-            <div class="nav-divider"></div>
+        <div class="nav-divider"></div>
 
-            <!-- lily monav -->
-            <a
-                href="lily"
-                class="nav-btn active-lily"
-                onclick="
+        <!-- lily monav -->
+        <a href="lily" class="nav-btn active-lily" onclick="
                     document
                         .getElementById('lily')
                         .scrollIntoView({ behavior: 'smooth' });
                     return false;
-                "
-                ><i class="fa-solid fa-heart"></i><span>Mine <3</span></a
-            >
-        </div>
+                "><i class="fa-solid fa-heart"></i><span>Mine <3< /span></a>
+    </div>
 
-        <!-- only for mobile | wqrning -->
-        <div id="mobile-warning">
-            <div class="warning-card">
-                <div class="warning-icon">
-                    <i class="fa-solid fa-desktop"></i>
-                </div>
-                <h3 class="warning-title">Desktop Recommended!</h3>
-                <p class="warning-text">
-                    Website ini didesain dengan konsep <b>Split Screen</b>.
-                    <br /><br />
-                    Jadinya, untuk pengalaman visual & efek terbaik, bisa Putar
-                    layar HP kamu atau buka lewat
-                    <b>Laptop/PC</b>, ya.
-                </p>
-                <button
-                    class="warning-btn"
-                    onclick="
+    <!-- only for mobile | wqrning -->
+    <div id="mobile-warning">
+        <div class="warning-card">
+            <div class="warning-icon">
+                <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h3 class="warning-title">Desktop Recommended!</h3>
+            <p class="warning-text">
+                Website ini didesain dengan konsep <b>Split Screen</b>.
+                <br /><br />
+                Jadinya, untuk pengalaman visual & efek terbaik, bisa Putar
+                layar HP kamu atau buka lewat
+                <b>Laptop/PC</b>, ya.
+            </p>
+            <button class="warning-btn" onclick="
                         document.getElementById(
                             'mobile-warning',
                         ).style.display = 'none'
-                    "
-                >
-                    Okeyy, Aku Pahamm kk >_
-                </button>
-            </div>
+                    ">
+                Okeyy, Aku Pahamm kk >_
+            </button>
         </div>
+    </div>
 
-        <!--  watermark {credit on website} -->
-        <div class="creatorby">
-            Crafted By Adnan | Music by Andra and The Backbone
-        </div>
-        <script src="js/index.js"></script>
-    </body>
+    <!--  watermark {credit on website} -->
+    <div class="creatorby">
+        Crafted By Adnan | Music by Andra and The Backbone
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
